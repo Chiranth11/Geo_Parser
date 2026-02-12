@@ -24,7 +24,7 @@ def run_geo_flow(conn, raw_address: str) -> dict:
             "result": cache_result
         }
 
-    # 3. External resolution (Day-4)
+    # 3. External resolution
     external_result = external_geo_resolution(conn, parsed)
 
     return {
